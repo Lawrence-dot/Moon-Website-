@@ -1,0 +1,493 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+.main-page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+#bg-home {
+    background-image: url('./assets/home/background-home-desktop.jpg');
+}
+
+#bg-destination {
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
+}
+
+#bg-crew {
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+}
+
+#bg-technology {
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+}
+
+.logo-line {
+   margin-top: 30px;
+   color: rgb(255, 255, 255, 0.1);
+   opacity: .3;
+}
+
+.top-navs {
+    display: flex;
+    visibility: visible;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.top-logo {
+    margin: 20px;
+    margin-right: -40px;
+}
+
+.top-navs ul {
+    background-color: rgba(151, 151, 151, 0.29);
+    list-style: none;
+    /* position: absolute; */
+    width: 720px;
+    height: 80px;
+    top: 0px;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.top-navs li {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+}
+
+.mars-list {
+    padding-left: 0px;
+}
+
+.mars-list li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+.mobile-togg {
+    display: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.showing {
+    margin-right: 190px;
+}
+
+.show {
+    display: block!important;
+}
+
+.side-nav {
+    display: none;
+    background-color: rgba(151, 151, 151, 0.29);
+    color: #ffffff;
+    /* opacity: 0.7; */
+    height: 100vh;
+    flex-direction: column-reverse;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.side-nav li {
+    margin-bottom: 25px;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+ul.side-list {
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.rows {
+    display: flex;
+}
+
+.col-10 {
+    flex: 83.33%;
+}
+
+.col-7 {
+    flex: 58.333%;
+}
+
+.col-2 {
+    flex: 16.66%;
+}
+
+.col-3 {
+    flex: 25%;
+}
+
+.col-5 {
+    flex: 41.66%;
+}
+
+.col-6 {
+    flex: 50%;
+}
+
+.col-12 {
+    flex: 100%;
+}
+
+.close-icon {
+    display: none;
+}
+
+.page-body {
+    display: none;
+    width: 100%;
+    color: #ffffff;
+    animation: fadeIn;
+    animation-delay: 2s;
+}
+
+.page-content {
+    padding: 80px;
+}
+
+.space-content {
+    flex: 58%;
+}
+
+.page-1 {
+    margin: 40px;
+}
+
+.page-1 h1 {
+    font-size: 100px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 44px;
+}
+
+.explore-container p {
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 50%;
+    height: 170px;
+    width: 190px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 170px;
+}
+
+.page-1-explore {
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.destination-header {
+    color: rgba(255, 255, 255, 0.94);
+    margin-bottom: 35px!important;
+    font-weight: 300;
+}
+
+.fade {
+    opacity: .6;
+}
+
+.mars-container {
+    margin-top: 120px;
+}
+
+.mars-list-container {
+    flex: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.mars-body {
+    display: none;
+}
+
+
+.list-items {
+    flex: 100%;
+    flex-direction: row;
+    margin-left: 5px;
+}
+
+.distance-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.distance-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.distance-right {
+    float: right;
+}
+
+.crew-body {
+    display: none;
+    margin-bottom: 20px;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.crew-list {
+    padding-left: 0px;
+}
+
+.crew-content {
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.crew-content img {
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.crew-content h4 {
+    font-weight: 400;
+}
+
+.white {
+    background-color: white!important;
+}
+
+.tech-body {
+    display: none;
+    margin-bottom: 20px;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.indicate-link {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 4px;
+}
+
+.tech-list {
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.tech-link {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.tech-content {
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.tech-content img {
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.ontech {
+    background-color: white;
+    color: black!important;
+}
+
+@media (max-width: 639px) {
+    #bg-home {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+    }
+    
+    #bg-destination {
+        background-image: url('./assets/destination/background-destination-mobile.jpg');
+    }
+    
+    #bg-crew {
+        background-image: url('./assets/crew/background-crew-mobile.jpg');
+    }
+    
+    #bg-technology {
+        background-image: url('./assets/technology/background-technology-mobile.jpg');
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .row {
+        padding: 10px!important;
+        flex-direction: row;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    #bg-home {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+    }
+    
+    #bg-destination {
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+    }
+    
+    #bg-crew {
+        background-image: url('./assets/crew/background-crew-tablet.jpg');
+    }
+    
+    #bg-technology {
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+    }
+
+    .top-navs {
+        display: none;
+        visibility: hidden;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    .top-navbar {
+        top: 0;
+        position: sticky;
+        background-color: rgba(151, 151, 151, 0.29);
+        height: 90px;
+        z-index: 9999;
+    }
+
+    .logo-line {
+        display: none;
+    }
+
+    .mobile-togg {
+        display: block;
+    }
+
+    .page-1 {
+        margin: 20px;
+    }
+
+
+    .col-sm-12 {
+        flex: 100%;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .page-content {
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .space-content {
+        flex: 100%;
+        display: block;
+    }
+
+    .tech-row {
+        display: block;
+    }
+
+    .tech-body h1, .tech-body h4 {
+        text-align: center;
+    }
+
+    .tech-link {
+        display: inline-block;
+    }
+    
+    .tech-list {
+        display: block;
+        position: relative;
+        left: 35%;
+        margin: 0 auto;
+    }
+
+    .technology-header {
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width: 1023px) {
+    #bg-home {
+        background-image: url('./assets/home/background-home-desktop.jpg');
+    }
+    
+    #bg-destination {
+        background-image: url('./assets/destination/background-destination-desktop.jpg');
+    }
+    
+    #bg-crew {
+        background-image: url('./assets/crew/background-crew-desktop.jpg');
+    }
+    
+    #bg-technology {
+        background-image: url('./assets/technology/background-technology-desktop.jpg');
+    }
+
+    .top-navs ul {
+        background-color: rgba(151, 151, 151, 0.29);
+        list-style: none;
+        /* position: absolute; */
+        width: 450px;
+        height: 60px;
+        top: 0px;
+        vertical-align: middle;
+        line-height: 60px;
+    }
+
+    .top-navs li {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        margin: 0 5px;
+    }
+
+    .top-logo {
+        margin: 20px;
+        margin-right: -170px;
+    }
+}
